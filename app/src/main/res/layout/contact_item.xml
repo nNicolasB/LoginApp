@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/contactImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="match_parent"
+        android:layout_toEndOf="@id/contactImage"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:textSize="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/contactPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contactImage"
+        android:layout_below="@id/contactName"
+        android:textColor="@color/black"
+        android:text="Phone Number"
+       />
+
+    <!-- Remove Button -->
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Remove" />
+
+
+</RelativeLayout>
